@@ -31,7 +31,7 @@ To fix this, bundle your files with appropriate extensions:
 
 1. If your package doesn't have `"type"` in your `package.json`, use `.cjs`/`.js` extensions, when files have `commonjs` syntax, and `.mjs` extension for files with `esm` syntax
 
-```json
+```jsonc
 {
   "exports": {
     ".": {
@@ -44,7 +44,7 @@ To fix this, bundle your files with appropriate extensions:
 
 2. If your package has `"type": "commonjs"` in your `package.json`, use `.cjs`/`.js` extensions, when files have `commonjs` syntax, and `.mjs` extension for files with `esm` syntax
 
-```json
+```jsonc
 {
   "type": "commonjs",
   "exports": {
@@ -59,7 +59,7 @@ To fix this, bundle your files with appropriate extensions:
 3. If your package has `"type": "module"` in your `package.json`, use `.cjs` extension, when files have `commonjs` syntax, and `.mjs`/`.js` extension for files with `esm` syntax
 
 
-```json
+```jsonc
 {
   "type": "module",
   "exports": {

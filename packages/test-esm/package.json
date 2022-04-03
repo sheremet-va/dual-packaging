@@ -1,0 +1,10 @@
+{
+    "name": "test-esm",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./index.esm.js",
+            "require": "./index.cjs.js"
+        }
+    }
+}

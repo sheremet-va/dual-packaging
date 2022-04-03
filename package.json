@@ -1,0 +1,19 @@
+{
+  "name": "logger-vitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest log.test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.5.1",
+    "pino": "^7.9.2",
+    "vitest": "^0.8.4",
+    "test-cjs": "workspace:*",
+    "test-esm": "workspace:*",
+    "test-mixed": "workspace:*"
+  }
+}

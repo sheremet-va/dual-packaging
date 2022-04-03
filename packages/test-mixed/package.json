@@ -1,0 +1,9 @@
+{
+    "name": "test-mixed",
+    "exports": {
+        ".": {
+            "import": "./index.mjs",
+            "require": "./index.cjs"
+        }
+    }
+}

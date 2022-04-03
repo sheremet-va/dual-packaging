@@ -1,0 +1,10 @@
+{
+    "name": "test-cjs",
+    "type": "commonjs",
+    "exports": {
+        ".": {
+            "import": "./index.esm.js",
+            "require": "./index.cjs.js"
+        }
+    }
+}

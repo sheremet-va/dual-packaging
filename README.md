@@ -63,3 +63,6 @@ export default {
 ## vite.config.js
 
 > TODO
+
+# See also
+- [Dual CommonJS/ES module packages in official Node.js documentation](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)

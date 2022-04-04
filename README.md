@@ -17,14 +17,14 @@ Node doesn't allow using `.js` extension for both `esm` and `commonjs` files in 
 
 When running this package, you will get an error, depending on it's `type` field:
 
-- run `node cjs/test-esm.js` to get `require() of ES Module` error (if package has no `type` or `"type": "commonjs"`)
-
-  - which means you can only use `import` syntax with this module in Node
-  - when running `node cjs/test-cjs.mjs`, you will not get an error
-
-- run `node esm/test-cjs.mjs` to get `The requested module is a CommonJS module` error (if package has `"type": "module"`)
+- run `node cjs/test-esm.js` to get `require() of ES modules is not supported.` error (if package has no `type` or `"type": "commonjs"`)
 
   - which means you can only use `require` syntax with this module in Node
+  - when running `node cjs/test-cjs.js`, you will not get an error
+
+- run `node esm/test-cjs.mjs` to get `The requested module 'test-cjs' is a CommonJS module` error (if package has `"type": "module"`)
+
+  - which means you can only use `import` syntax with this module in Node
   - when running `node esm/test-esm.mjs`, you will not get an error
 
 To fix this, bundle your files with appropriate extensions:

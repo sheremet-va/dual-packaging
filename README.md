@@ -20,12 +20,12 @@ When running this package, you will get an error, depending on it's `type` field
 - run `node cjs/test-esm.js` to get `require() of ES modules is not supported` error (package has no `type` or `"type": "commonjs"`, so cjs requires esm-like file inside cjs package)
 
   - which means you can only use `import` syntax with this module in Node
-  - example: when running `node esm/test-esm.mjs`, you will not get an error (esm imports esm)
+  - example: when running `node esm/test-esm.mjs`, you will not get an error (esm `imports` esm)
 
 - run `node esm/test-cjs.mjs` to get `The requested module 'test-cjs' is a CommonJS module` error (package has `"type": "module"`, so esm imports cjs-like file inside esm package)
 
   - which means you can only use `require` syntax with this module in Node
-  - example: when running `node cjs/test-cjs.js`, you will not get an error (cjs imports cjs)
+  - example: when running `node cjs/test-cjs.js`, you will not get an error (cjs `requires` cjs)
 
 - if you run `node cjs/test-mixed.js` or `node esm/test-mixed.mjs` you will see no errors because it has correct `exports` field.
 

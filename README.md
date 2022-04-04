@@ -111,11 +111,25 @@ export default {
 
 ## vite.config.js
 
-> TODO
+```js
+export default {
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, 'src/index.js'),
+      fileName: (format) => `index.${format == 'es' ? 'mjs' : 'js'}`
+    }
+  }
+}
+```
 
 ## tsup.config.js
 
-> TODO
+```js
+export default {
+    entry: ['index.js'],
+    format: ['esm', 'cjs']
+}
+```
 
 # See also
 - [Dual CommonJS/ES module packages in official Node.js documentation](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)

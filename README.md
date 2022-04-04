@@ -15,6 +15,16 @@ Node doesn't allow using `.js` extension for both `esm` and `commonjs` files in 
 
 > Run `pnpm install` before running examples
 
+## Prerequisite
+
+We have 3 packages:
+
+- **test-cjs** is a commonjs package that has incorrect `exports` field for "import" files (has `.js` extension)
+- **test-esm** is a esm pckage that has incorrect `exports` field for "require" files (has `.js` extension)
+- **test-mixed** is commonjs package that has correct `exports` field for "import" and "require" files (has `.mjs` and `.cjs` extensions)
+
+## Examples
+
 When running this package, you will get an error, depending on it's `type` field:
 
 - run `node cjs/test-esm.js` to get `require() of ES modules is not supported` error (cjs `requires` cjs-like file inside esm package)

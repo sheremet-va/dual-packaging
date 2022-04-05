@@ -1,2 +1,2 @@
-const example = "rollup";
+const example = "vite";
 export { example };

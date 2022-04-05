@@ -167,7 +167,7 @@ You will need two `tsconfig.json` configs:
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "esnext",
+    "module": "commonjs",
     "outDir": "dist",
     "target": "es2015"
   }

@@ -1,0 +1,16 @@
+{
+    "name": "example-vite",
+    "type": "commonjs",
+    "scripts": {
+        "build": "vite build"
+    },
+    "exports": {
+        ".": {
+            "import": "./index.mjs",
+            "require": "./index.js"
+        }
+    },
+    "devDependencies": {
+        "vite": "^2.9.1"
+    }
+}

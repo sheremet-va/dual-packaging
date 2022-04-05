@@ -1,0 +1,16 @@
+{
+    "name": "example-tsup",
+    "type": "module",
+    "scripts": {
+        "build": "tsup"
+    },
+    "exports": {
+        ".": {
+            "import": "./index.js",
+            "require": "./index.cjs"
+        }
+    },
+    "devDependencies": {
+        "tsup": "^5.12.4"
+    }
+}

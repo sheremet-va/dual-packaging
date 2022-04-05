@@ -1,0 +1,18 @@
+{
+    "name": "example-vite",
+    "type": "commonjs",
+    "scripts": {
+        "build:cjs": "tsc -p tsconfig.cjs.json",
+        "build:esm": "tsc -p tsconfig.esm.json && echo >dist/esm/package.json \"{\\\"type\\\":\\\"module\\\"}\"",
+        "build": "npm run build:cjs && npm run build:esm"
+    },
+    "exports": {
+        ".": {
+            "import": "./esm/index.js",
+            "require": "./index.js"
+        }
+    },
+    "dependencies": {
+        "typescript": "^4.6.3"
+    }
+}

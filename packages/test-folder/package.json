@@ -1,0 +1,9 @@
+{
+    "name": "test-folder",
+    "exports": {
+        ".": {
+            "import": "./esm/index.js",
+            "require": "./index.js"
+        }
+    }
+}

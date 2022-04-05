@@ -7,6 +7,7 @@
   "dependencies": {
     "test-cjs": "workspace:*",
     "test-esm": "workspace:*",
-    "test-mixed": "workspace:*"
+    "test-mixed": "workspace:*",
+    "test-folder": "workspace:*"
   }
 }

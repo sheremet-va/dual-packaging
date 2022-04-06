@@ -6,8 +6,8 @@
     },
     "exports": {
         ".": {
-            "import": "./index.mjs",
-            "require": "./index.cjs"
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
         }
     },
     "devDependencies": {

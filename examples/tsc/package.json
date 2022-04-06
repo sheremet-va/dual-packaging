@@ -8,8 +8,8 @@
     },
     "exports": {
         ".": {
-            "import": "./esm/index.js",
-            "require": "./index.js"
+            "import": "./dist/esm/index.js",
+            "require": "./dist/index.js"
         }
     },
     "dependencies": {

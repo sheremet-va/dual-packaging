@@ -13,11 +13,11 @@ Node doesn't allow using `.js` extension for both `esm` and `commonjs` files in 
 }
 ```
 
-> Run `pnpm install` before running examples
+> **Note**: Node also doesn't support "module" field by it's resolution algorithm (this is bundlers convention, that wasn't officially adopted by Node), so it is highly encouraged to use "exports" field alongside "module" field for the older bundlers.
 
 ## Prerequisite
 
-We have 3 packages:
+We have 4 packages:
 
 - **test-cjs** is a commonjs package that has incorrect `exports` field for "import" files (has `.js` extension)
 - **test-esm** is a esm pckage that has incorrect `exports` field for "require" files (has `.js` extension)
@@ -25,6 +25,8 @@ We have 3 packages:
 - **test-folder** is a commonjs package that has correct `exports` field for "import" and "require" files (has `.js` extension, but `esm` is inside `/esm` folder with near `package.json` having `"type": "module"`)
 
 ## Examples
+
+> Run `pnpm install` before running examples
 
 When running this package, you will get an error, depending on it's `type` field:
 

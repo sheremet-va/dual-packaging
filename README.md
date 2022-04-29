@@ -1,4 +1,4 @@
-# Node "exports" field explanation
+# Node "exports", "module" fields explanation
 
 Node doesn't allow using `.js` extension for both `esm` and `commonjs` files in the same project when importing files _from_ that project. This is why this `exports` field is **BAD**:
 
@@ -13,7 +13,7 @@ Node doesn't allow using `.js` extension for both `esm` and `commonjs` files in 
 }
 ```
 
-> **Note**: Node also doesn't support "module" field by it's resolution algorithm (this is bundlers convention, that wasn't officially adopted by Node), so it is highly encouraged to use "exports" field alongside "module" field for the older bundlers.
+Node also doesn't support "module" field by it's resolution algorithm (this is bundlers convention that wasn't officially adopted by Node), so it is highly encouraged to use "exports" field alongside "module" field for the older bundlers. In the examples bellow only "exports" field is used.
 
 ## Prerequisite
 

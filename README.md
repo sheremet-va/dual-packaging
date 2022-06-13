@@ -206,3 +206,4 @@ $ echo >dist/esm/package.json "{\"type\":\"module\"}"
 - [Dual CommonJS/ES module packages in official Node.js documentation](https://nodejs.org/api/packages.html#dual-commonjses-module-packages)
 - [Publish ESM and CJS in a single package](https://antfu.me/posts/publish-esm-and-cjs) by [Anthony Fu](https://github.com/antfu)
 - [How to Create a Hybrid NPM Module for ESM and CommonJS](https://www.sensedeep.com/blog/posts/2021/how-to-create-single-source-npm-module.html) on SenseDeep
+- [publint](https://publint.bjornlu.com/) tool to check if package is published right, by [Bjorn Lu](https://bjornlu.com/)

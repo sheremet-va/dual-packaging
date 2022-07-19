@@ -13,7 +13,7 @@ Node doesn't allow using `.js` extension for both `esm` and `commonjs` files in 
 }
 ```
 
-Node also doesn't support "module" field by it's resolution algorithm (this is bundlers convention that wasn't officially adopted by Node), so it is highly encouraged to use "exports" field alongside "module" field for the older bundlers. In the examples bellow only "exports" field is used.
+Node also doesn't support "module" field by its resolution algorithm (this is bundlers convention that wasn't officially adopted by Node), so it is highly encouraged to use "exports" field alongside "module" field for the older bundlers. In the examples bellow only "exports" field is used.
 
 ## Prerequisite
 
@@ -28,7 +28,7 @@ We have 4 packages:
 
 > Run `pnpm install` before running examples
 
-When running this package, you will get an error, depending on it's `type` field:
+When running this package, you will get an error, depending on its `type` field:
 
 - run `node cjs/test-esm.js` to get `require() of ES modules is not supported` error (cjs `requires` cjs-like file inside esm package)
 
